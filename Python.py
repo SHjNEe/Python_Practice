@@ -1,121 +1,121 @@
-# file = open('item.txt')
-# # print(file)
-# # help(open)
+file = open('item.txt')
+# print(file)
+# help(open)
 
-# fileContent = file.read(2222)
-# print(fileContent)
-# # file.close()
-# fileContent2 = file.read(2222)
-# print(fileContent2)
+fileContent = file.read(2222)
+print(fileContent)
+# file.close()
+fileContent2 = file.read(2222)
+print(fileContent2)
 
 
-# def some_random_stuff():
-#     print('hello from function'.capitalize())
+def some_random_stuff():
+    print('hello from function'.capitalize())
   
 
-# def test(a):
-#     print('''hello from''')
+def test(a):
+    print('''hello from''')
 
-# def is_odd(number):
-#     number = int(number)
-#     result = 'Is Odd' if number % 2 == 1 else 'This number is even'
-#     print(result)
+def is_odd(number):
+    number = int(number)
+    result = 'Is Odd' if number % 2 == 1 else 'This number is even'
+    print(result)
 
 
-# inputNumber = input('Please input want to check : ')
-# is_odd(inputNumber)
+inputNumber = input('Please input want to check : ')
+is_odd(inputNumber)
 
 # *args, **kwargs
-# def super_function(*args, **kwargs):
-#     print(kwargs, kwargs.values())
-#     return sum(list(args)) + sum(kwargs.values())
+def super_function(*args, **kwargs):
+    print(kwargs, kwargs.values())
+    return sum(list(args)) + sum(kwargs.values())
 
-# result = super_function(1,2,3,4, num1 = 5, num2 =10)
-# print(result)
-
-
-# def highest_even(li):
-#     evens = []
-#     for item in li:
-#         if item % 2 == 0:
-#             evens.append(item)
-#     return max(evens)        
-
-# print(highest_even([1,2,3,4,5]))
-
-# print(f"{(n := input('Please enter your name? : '))}")
-# print(f'{(n := input("Please enter your name? : "))}')
-
-# a = 100
-
-# def newNumb():
-#     global a
-#     a += 200
-#     return "hihi"
-
-# newNumb()
-
-# print(a)
-
-# def inner():
-#     str = 'Test'
-#     def converStr():
-#         nonlocal str
-#         str = 'Hihii'
-#         print(str)
-#     converStr()    
-#     print(str)
-
-# inner()
+result = super_function(1,2,3,4, num1 = 5, num2 =10)
+print(result)
 
 
-# class Car():
-#     membership =  True
-#     def __init__(self, name, model, year):
-#         if(Car.membership):
-#             self.name = name
-#             self.model = model
-#             self.year = year
-#     def run(self):
-#         print('Run...')
-#         print('Done...')
-#     def shout(self):
-#         print(f'My name is {self.name}')
+def highest_even(li):
+    evens = []
+    for item in li:
+        if item % 2 == 0:
+            evens.append(item)
+    return max(evens)        
 
-#     @classmethod
-#     def some_thing(cls, name, model, year):
-#         return cls(f'Hello {name}', model, year)
-#     def info(self):
-#         print(self.name)
+print(highest_even([1,2,3,4,5]))
 
-#     @staticmethod
-#     def static_method():
-#         print('Static is call')
+print(f"{(n := input('Please enter your name? : '))}")
+print(f'{(n := input("Please enter your name? : "))}')
 
-# # mercedes = Car.some_thing('Mercedes', 'Tesla', 2021)
+a = 100
 
-# # mercedes.info()
-# # Car.run()
+def newNumb():
+    global a
+    a += 200
+    return "hihi"
 
-# Car.static_method()
+newNumb()
 
-# class PlayerCharacter():
-#     def __init__(self, name, age):
-#         self._name = name
-#         self._age = age
-#     def run(self):
-#         print('Run...')
-#         print('Done...')
-#     def shout(self):
-#         print(f'My name is {self._name}')
+print(a)
 
-# player1 = PlayerCharacter('Andrei', 30)
+def inner():
+    str = 'Test'
+    def converStr():
+        nonlocal str
+        str = 'Hihii'
+        print(str)
+    converStr()    
+    print(str)
+
+inner()
 
 
-# # player1.shout = 'HIHIHI'
-# player1.name = 'HIHIHI'
+class Car():
+    membership =  True
+    def __init__(self, name, model, year):
+        if(Car.membership):
+            self.name = name
+            self.model = model
+            self.year = year
+    def run(self):
+        print('Run...')
+        print('Done...')
+    def shout(self):
+        print(f'My name is {self.name}')
 
-# print(player1.name)
+    @classmethod
+    def some_thing(cls, name, model, year):
+        return cls(f'Hello {name}', model, year)
+    def info(self):
+        print(self.name)
+
+    @staticmethod
+    def static_method():
+        print('Static is call')
+
+mercedes = Car.some_thing('Mercedes', 'Tesla', 2021)
+
+mercedes.info()
+Car.run()
+
+Car.static_method()
+
+class PlayerCharacter():
+    def __init__(self, name, age):
+        self._name = name
+        self._age = age
+    def run(self):
+        print('Run...')
+        print('Done...')
+    def shout(self):
+        print(f'My name is {self._name}')
+
+player1 = PlayerCharacter('Andrei', 30)
+
+
+# player1.shout = 'HIHIHI'
+player1.name = 'HIHIHI'
+
+print(player1.name)
 
 class User:
     def __init__(self, email):
